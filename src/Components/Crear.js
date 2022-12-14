@@ -27,16 +27,16 @@ export const Agregar = () => {
     };
 
     setJuegoState(juego);
-
-    console.log(juego);
   };
 
   return (
     <div className="add">
       <h3 className="title">{tituloComponente}</h3>
-      <h3 className="title">
-        {(titulo && descripcion) && + "has creado el juego: " + titulo}
-      </h3>
+      <strong>
+        {titulo && descripcion
+          ? "Juego Creado: " + titulo
+          : `No se a podio agregar el Juego...`}
+      </strong>
       <form onSubmit={conseguirDatosForm}>
         <input type="text" id="titulo" name="titulo" placeholder="Titulo" />
         <textarea
