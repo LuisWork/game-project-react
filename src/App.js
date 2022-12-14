@@ -1,3 +1,7 @@
+import { Listado } from "./Components/Listado";
+import { Agregar } from "./Components/Agregar";
+import { Buscar } from "./Components/Buscar";
+
 function App() {
   return (
   <div className="layout">
@@ -18,49 +22,14 @@ function App() {
       </ul>
     </nav>
     <section className="content">
-      {/* Aqui van los Juegos */}
-      <article className="game-item">
-        <h3 className="title">Desarrollo web</h3>
-        <p className="description">LuisWork.github.io</p>
-        <button className="edit">Editar</button>
-        <button className="delete">Borrar</button>
-      </article>
-      <article className="game-item">
-        <h3 className="title">Desarrollo web</h3>
-        <p className="description">LuisWork.github.io</p>
-        <button className="edit">Editar</button>
-        <button className="delete">Borrar</button>
-      </article>
-      <article className="game-item">
-        <h3 className="title">Desarrollo web</h3>
-        <p className="description">LuisWork.github.io</p>
-        <button className="edit">Editar</button>
-        <button className="delete">Borrar</button>
-      </article>
-      <article className="game-item">
-        <h3 className="title">Desarrollo web</h3>
-        <p className="description">LuisWork.github.io</p>
-        <button className="edit">Editar</button>
-        <button className="delete">Borrar</button>
-      </article>
+      {/* Aqui van el listado de Juegos */}
+    <Listado/>
     </section>
     {/* Barra Lateral */}
     <aside className="lateral">
-      <div className="search">
-        <h3 className="title">Buscador</h3>
-        <form>
-          <input type="text"/>
-          <button>Buscar</button>
-        </form>
-      </div>
-      <div className="add">
-        <h3 className="title">Agregar Juego</h3>
-        <form>
-          <input type="text" placeholder="Titulo"/>
-          <textarea placeholder="Descripcion"></textarea>
-          <input type="submit" value="Guardar"/>
-        </form>
-      </div>
+      <Buscar/>
+      <Agregar/>
+      
     </aside>
     {/* Pie de pagina */}
     <footer className="footer">
