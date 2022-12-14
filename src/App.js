@@ -1,5 +1,5 @@
 import { Listado } from "./Components/Listado";
-import { Agregar } from "./Components/Agregar";
+import { Agregar } from "./Components/Crear";
 import { Buscar } from "./Components/Buscar";
 
 function App() {
